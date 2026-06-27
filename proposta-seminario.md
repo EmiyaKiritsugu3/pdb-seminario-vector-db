@@ -22,12 +22,12 @@ $$\text{similaridade}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
 Ao utilizar o PostgreSQL, evitamos a necessidade de provisionar uma infraestrutura de banco de dados vetorial separada e dedicada, permitindo que dados relacionais (como informações de usuários ou metadados de projetos) coexistam e sejam consultados simultaneamente com dados vetoriais (embeddings semânticos).
 
 ## Proposta Prática
-A demonstração prática focará na implementação de um fluxo de **Retrieval-Augmented Generation (RAG)** para uma aplicação de Inteligência Artificial, enfatizando a administração e a otimização das consultas vetoriais no banco de dados. As seguintes etapas serão realizadas:
+A apresentação abordará de forma explicativa o fluxo de **Retrieval-Augmented Generation (RAG)** para aplicações de Inteligência Artificial, com foco na administração e otimização de consultas vetoriais. Os seguintes tópicos serão abordados:
 
-1. **Configuração e Administração:** Instalação de uma instância do PostgreSQL e habilitação da extensão `pgvector`. Criação das tabelas relacionais contendo uma coluna do tipo vetor (`vector(n)`), onde *n* representa as dimensões do embedding de um modelo de IA de código aberto.
-2. **Integração no Backend:** Desenvolvimento de um serviço backend (utilizando Go ou Python) que processa documentos de texto, interage com uma API de IA para gerar os embeddings e insere esses vetores no banco de dados.
-3. **Busca por Similaridade:** Implementação de uma funcionalidade de busca onde uma consulta de texto (prompt do usuário) é convertida em um vetor, e o banco de dados executa uma busca de vizinhos mais próximos (K-Nearest Neighbors - KNN) utilizando operadores do `pgvector` (como `<=>` para distância de cosseno) para retornar os contextos mais relevantes.
-4. **Otimização de Desempenho:** A demonstração prática culminará na otimização do banco de dados. Serão gerados milhares de registros para simular um ambiente de produção. Em seguida, compararemos o tempo de execução e o custo computacional de buscas exatas (sem índice) versus buscas aproximadas (Approximate Nearest Neighbor - ANN) através da criação e configuração de índices **HNSW (Hierarchical Navigable Small World)** no PostgreSQL.
+1. **Conceitos de Banco Vetorial:** O que são embeddings, como são gerados por modelos de IA e como bancos de dados vetoriais armazenam e consultam esses dados.
+2. **pgvector no PostgreSQL:** Como a extensão `pgvector` transforma o PostgreSQL em um banco vetorial, permitindo buscas por similaridade usando operadores como `<=>` (distância de cosseno).
+3. **Arquitetura RAG:** Explicação do fluxo RAG — como documentos são convertidos em embeddings, armazenados no banco e recuperados como contexto para responder consultas com LLMs.
+4. **Otimização com índices HNSW:** Comparação conceitual entre busca exata (KNN) e busca aproximada (ANN), mostrando como os índices **HNSW (Hierarchical Navigable Small World)** melhoram o desempenho em grandes volumes de dados.
 
 ## Referências
 * PostgreSQL Global Development Group. (2024). *PostgreSQL Documentation*. Recuperado de https://www.postgresql.org/docs/
