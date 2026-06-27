@@ -1,5 +1,9 @@
 # Proposta de Seminário: Projeto de Banco de Dados
 
+**Disciplina:** DCT2202 - Projeto e Administração de Banco de Dados - T01 (2026.1)
+**Professor:** Taciano de Morais Silva
+**Centro:** Centro de Ensino Superior do Seridó - CERES/UFRN
+
 ## Título/Tema
 Administração e Otimização de Bancos de Dados Vetoriais para Aplicações de Inteligência Artificial
 
