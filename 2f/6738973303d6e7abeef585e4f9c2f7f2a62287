@@ -1,0 +1,19 @@
+proposta-seminario.md
+  s_1f6ca4b95a9ffd::t_d92f58d896dcdc 25,27-30
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.3",
+  "base_commit_sha": "2f6738973303d6e7abeef585e4f9c2f7f2a62287",
+  "prompts": {},
+  "sessions": {
+    "s_1f6ca4b95a9ffd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ses_0f90cdf21ffexaXi7p07ySAncs",
+        "model": "unknown"
+      },
+      "human_author": "EmiyaKiritsugu3 <inamarjunior2@gmail.com>"
+    }
+  }
+}
