@@ -1,0 +1,35 @@
+demo/README.md
+  s_006a76554968ff::t_ca632bc337d6c5 1-39
+demo/sql/02_queries.sql
+  s_006a76554968ff::t_998448c2536e11 1-57
+demo/src/hybrid_search.py
+  s_006a76554968ff::t_25004749315f9d 1-115
+demo/src/rag_pipeline.py
+  s_006a76554968ff::t_ad83e0f3478647 1-112
+demo/sql/01_schema.sql
+  s_006a76554968ff::t_5a5a93481b8c55 1-40
+README.md
+  s_006a76554968ff::t_e452cd500e4f9f 1-29
+demo/docker-compose.yml
+  s_006a76554968ff::t_20d627486678b7 1-24
+demo/src/generate_embeddings.py
+  s_006a76554968ff::t_3ee46133da87aa 1-77
+demo/src/requirements.txt
+  s_006a76554968ff::t_9fd13e01ea87b4 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.6",
+  "base_commit_sha": "5da47e5a314a6f8221165d21a783b90c42e2548a",
+  "prompts": {},
+  "sessions": {
+    "s_006a76554968ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9bb89ab6-735b-4ef3-9955-3a94dfde484f",
+        "model": "unknown"
+      },
+      "human_author": "EmiyaKiritsugu3 <inamarjunior2@gmail.com>"
+    }
+  }
+}
