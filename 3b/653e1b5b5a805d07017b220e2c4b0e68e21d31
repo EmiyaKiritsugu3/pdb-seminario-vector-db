@@ -1,0 +1,28 @@
+"Otimização de pgvector no PostgreSQL.md"
+  s_75b424eba39a16::t_d33366e06ca747 3-6
+  s_006a76554968ff::t_22b18e76872d85 1-2,7-637
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.9",
+  "base_commit_sha": "3b653e1b5b5a805d07017b220e2c4b0e68e21d31",
+  "prompts": {},
+  "sessions": {
+    "s_006a76554968ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9bb89ab6-735b-4ef3-9955-3a94dfde484f",
+        "model": "unknown"
+      },
+      "human_author": "EmiyaKiritsugu3 <inamarjunior2@gmail.com>"
+    },
+    "s_75b424eba39a16": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b4896592-e747-4287-a711-7f3248c93528",
+        "model": "deepseek-v4-flash"
+      },
+      "human_author": "EmiyaKiritsugu3 <inamarjunior2@gmail.com>"
+    }
+  }
+}
